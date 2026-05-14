@@ -1,0 +1,58 @@
+# This file is in YAML format.  You must ensure that the punctuation
+# and whitespace is preserved.  Do NOT use Windows Notepad to edit this
+# file; use a real programming editor like Notepad++ instead.
+
+# Write your group name exactly as it appears on Canvas.
+group: a_group 193
+
+# Write the names of your group members as a comma-separated list
+# within the square brackets.
+members: [Suraj Singh, Giridhar Taneeru, Bharath Kumar Gelly, Bharadwaj Agraharam, Anudeep Chitumalla]
+
+# Write your general topic.  
+topic: Video Games
+
+# Write your research question, following one of the three allowed templates.
+# Be sure your question is all on one line.
+RQ: Is there a difference in the mean of global sales of video games in platforms between PlayStation and Xbox?
+
+# Write your independent and dependent variables.  These should be the
+# column names (reported by R colnames() where these variables are
+# found in your dataset's CSV file.
+# Note: if your question is about comparison of means, medians, or
+# proportions, the independent variable column is the one that
+# contains the values (at least two) that divide the population into
+# subsets.
+independent-var: Platform
+dependent-var: Global_Sales
+
+# Write the null hypothesis for your research question, again ensuring it is all on one line.
+null-hypothesis: There is no difference in the mean of global sales of video games in platforms between PlayStation and Xbox.
+
+# Write the alternative hypothesis for your research question, again ensuring it is all on one line.
+alt-hypothesis: There is a difference in the mean of global sales of video games in platforms between PlayStation and Xbox.
+
+# Write the dataset ID (KNNN):
+dataset-id: K213
+
+# Write the dataset URL.  Be sure it has the allowed hostname.
+dataset-url: "https://www.kaggle.com/datasets/gregorut/videogamesales"
+
+# Write the dataset CSV filename, exactly as it appears on the Sharepoint list
+# (which should be the same as the one in your repository!)
+dataset-file: vgsales.csv
+
+
+# Paste the output of loading your dataset into R, and executing the
+# colnames() function, into the space below the `columns: |` line.
+# Put two spaces *before* every line you pasted.
+columns: |
+  > d<-read.csv("vgsales.csv")
+  > colnames(d)
+   [1] "Rank"               "Name"
+   [3] "Platform"           "Year"
+   [5] "Genre"              "Publisher"
+   [7] "NA_Sales"           "EU_Sales"
+   [9] "JP_Sales"           "Other_Sales"
+  [11] "Global_Sales"
+  
